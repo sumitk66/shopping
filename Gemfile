@@ -16,6 +16,7 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'bootstrap'
 gem 'jquery-rails'
+gem 'devise'
 
 group :development, :test do
   gem 'pry'
