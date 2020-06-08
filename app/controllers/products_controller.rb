@@ -3,6 +3,7 @@ class ProductsController < ApplicationController
 	
 	def index
 		@items = Item.all
+		@count = Item.count
 	end
 
 	def show
@@ -15,6 +16,7 @@ class ProductsController < ApplicationController
 
 	def create
 		@item = Item.new item_params
+		@item.user = 
 		if @item.save
 			redirect_to product_path(@item)
 		else
