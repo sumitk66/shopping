@@ -9,6 +9,25 @@
   </head>
 
   <body>
+
+  	<header id="header">
+      <div class="header_inner">
+        <%= link_to "Home","#" %>
+
+        <nav>
+          <%# if user_signed_in? %>
+            <%= link_to "New Product", new_product_path %>
+            <%= link_to "Log Out", "#" %>
+            <%= link_to "Cart", "#" %>
+            
+
+          <%# else %>
+            <%#= link_to "Log In", "#" %>
+          <%# end %>
+          
+        </nav>
+      </div>
+    </header>  
     <%= yield %>
   </body>
 </html>

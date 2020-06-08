@@ -1,8 +1,8 @@
-<h1>Products Available</h1>
-<div>
+<div class="container">
+	<h1>Products Available</h1>
 	<% @items.each do |item| %>
 		<div>
-			<p>Name: <%= item.name %></p>
+			<p>Name: <%= link_to item.name, product_path(item) %></p>
 			<p>Category: <%= item.category %></p>
 			<p>Description: <%= item.description %></p>
 			<p>Tag: <%= item.tags %></p>
@@ -13,4 +13,3 @@
 		</div>
 	<% end %>
 </div>
-<%= link_to "Add", new_product_path %>
