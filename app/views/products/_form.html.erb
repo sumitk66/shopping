@@ -1,0 +1,27 @@
+<br><br>
+<%= form_for @item, url: :products, method: :post do |f| %>
+	
+	<%= f.label :name %><br>
+	<%= f.text_field :name %><br>
+
+	<%= f.label :category %><br>
+	<%= f.text_field :category %><br>
+
+	<%= f.label :description %><br>
+	<%= f.text_field :description %><br>
+
+	<%= f.label :tags %><br>
+	<%= f.text_field :tags %><br>
+
+	<%= f.label :availability %><br>
+	<%= f.text_field :availability %><br>
+
+	<%= f.label :availability_count %><br>
+	<%= f.text_field :availability_count %><br>
+
+	<%= f.label :price %><br>
+	<%= f.text_field :price %><br>
+
+	<%= f.submit %><br>
+	
+<% end %>

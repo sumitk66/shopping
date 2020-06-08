@@ -1,0 +1,16 @@
+<h1>Products Available</h1>
+<div>
+	<% @items.each do |item| %>
+		<div>
+			<p>Name: <%= item.name %></p>
+			<p>Category: <%= item.category %></p>
+			<p>Description: <%= item.description %></p>
+			<p>Tag: <%= item.tags %></p>
+			<p>Availability: <%= item.availability %></p>
+			<p>Item Count : <%= item.availability_count %></p>
+			<p>Price: <%= item.price %></p>
+			<br><br>
+		</div>
+	<% end %>
+</div>
+<%= link_to "Add", new_product_path %>
